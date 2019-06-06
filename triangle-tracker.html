@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>triangle</title>
+  </head>
+  <body>
+    <div id="triangle">
+      <p>Enter the lengths of each side of a triangle to find out what type it is!</p>
+      <form>
+        <div class ="side1">
+          <label for="length1">input length of side 1</label>
+          <input id="length1" class="form-control" type="text">
+        </div>
+        <div class ="side2">
+          <label for="length2">input length of side 2</label>
+          <input id="length2" class="form-control" type="text">
+        </div>
+        <div class ="side3">
+          <label for="length3">input length of side 3</label>
+          <input id="length3" class="form-control" type="text">
+        </div>
+        <button type="submit" class="button">Press Me</button>
+      </form>
+    </div>
+
+    <div class ="results">
+      <div class="equilateral">
+        <p>Equilateral: All sides are equal.</p>
+      </div>
+      <div class="isosceles">
+        <p>Isosceles: Exactly 2 sides are equal.</p>
+      </div>
+      <div class="scalene">
+        <p>Scalene: No sides are equal.</p>
+      </div>
+      <div class="nothing">
+        <p>NOT a triangle: The sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.</p>
+      </div>
+  </body>
+  </html>
